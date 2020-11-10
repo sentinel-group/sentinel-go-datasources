@@ -77,12 +77,12 @@ func startConsulDs() datasource.DataSource {
 		fmt.Println("Failed to instance consul client")
 		os.Exit(1)
 	}
-	// Note: need to put key "example-consul-cb-rules" in consul server.
-	ds, err := consul.NewDataSource("example-consul-cb-rules",
+	// Note: need to put key "flow-test" in consul server.
+	ds, err := consul.NewDataSource("flow-test",
 		// customize consul client
 		consul.WithConsulClient(client),
 		// preset property handlers
-		consul.WithPropertyHandlers(datasource.NewSystemRulesHandler(datasource.SystemRuleJsonArrayParser)),
+		consul.WithPropertyHandlers(datasource.NewFlowRulesHandler(datasource.FlowRuleJsonArrayParser)),
 	)
 
 	if err != nil {
