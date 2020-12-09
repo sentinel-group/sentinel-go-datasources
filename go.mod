@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d // indirect
-	github.com/alibaba/sentinel-golang v1.0.0
+	github.com/alibaba/sentinel-golang v1.0.1
 	github.com/coreos/etcd v3.3.25+incompatible
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-00010101000000-000000000000 // indirect
