@@ -9,6 +9,7 @@ require (
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-00010101000000-000000000000 // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
+	github.com/go-ole/go-ole v1.2.4 // indirect
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/hashicorp/consul/api v1.4.0
@@ -19,6 +20,6 @@ require (
 	google.golang.org/grpc v1.33.2 // indirect
 )
 
-replace github.com/coreos/bbolt v1.3.5 => go.etcd.io/bbolt v1.3.5
-
 replace github.com/coreos/go-systemd => github.com/coreos/go-systemd/v22 v22.0.0
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
