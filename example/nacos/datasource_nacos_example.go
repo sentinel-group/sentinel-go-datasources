@@ -54,7 +54,7 @@ func main() {
 	h := datasource.NewFlowRulesHandler(datasource.FlowRuleJsonArrayParser)
 	//sentinel-go is nacos configuration management Group in flow control
 	//flow is nacos configuration management DataId in flow control
-	nds, err := nacos.NewNacosDataSource(client, "sentinel-go", "flow", h)
+	nds, err := nacos.NewNacosDataSource(client, "sentinel-go", "flow-test", h)
 	if err != nil {
 		fmt.Printf("Fail to create nacos data source client, err: %+v", err)
 		return
